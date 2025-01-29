@@ -4,15 +4,15 @@ export class LoginPage {
 
 constructor(private readonly page: Page){}
 
-async loginIn(email: string, password: string){
-	const homePage = this.page.locator('nb-card', {hasText:"HomePage"})
-	await homePage.getByRole('textbox', {name: "Email"}).fill(email)
-	await homePage.getByRole('textbox', {name: "Password"}).fill(password)
-	await homePage.getByRole('button').click()
+async login(username: string, password: string){
+	this.page.getByRole('main', { name: 'Test login'})
+	await this.page.locator('#username').fill(username)
+	await this.page.getByLabel('Password').fill(password)
+	await this.page.getByRole('button').click()
 }
 
 async getErrorMessage() {
-  return this.page.locator('.error-message');
+  return this.page.locator('#error');
 }
 
 }
