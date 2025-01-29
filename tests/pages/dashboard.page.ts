@@ -4,6 +4,6 @@ export class DashboardPage {
   constructor(private page: Page) {}
 
   async getWelcomeMessage() {
-    return this.page.locator('h2');
+    return this.page.locator('#loop-container');
   }
 }
