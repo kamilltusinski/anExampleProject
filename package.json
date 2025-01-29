@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pageObjects-chrome": "npx playwright test authentication.test.ts --project=chromium --headed"
+    "pageObjects-chrome": "npx playwright test authentication.test.ts --project=chromium"
   },
   "keywords": [],
   "author": "",
