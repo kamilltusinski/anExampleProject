@@ -8,7 +8,7 @@ async login(username: string, password: string){
 	this.page.getByRole('main', { name: 'Test login'})
 	await this.page.locator('#username').fill(username)
 	await this.page.getByLabel('Password').fill(password)
-	await this.page.getByRole('button').click()
+	await this.page.getByRole('button',{name:'Submit'}).click()
 }
 
 async getErrorMessage() {
