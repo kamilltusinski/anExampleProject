@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pageObjects-chrome": "npx playwright test authentication.test.ts --project=chromium"
+    "pageObjects-chrome": "npx playwright test -g 'should display error with invalid credentials' --project=chromium"
   },
   "keywords": [],
   "author": "",
