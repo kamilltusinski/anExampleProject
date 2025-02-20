@@ -5,7 +5,7 @@ test.beforeEach(async({page})=>{
   await page.goto('/')
 
 })
-
+ 
 test.describe('User Authentication Tests', () => {
   test('should log in with valid credentials', async ({ page }, testInfo) => {
     const pm = new PageManager(page);
