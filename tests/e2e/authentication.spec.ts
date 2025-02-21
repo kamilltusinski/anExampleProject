@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { PageManager } from './pages/pageManager.page';
+import { PageManager } from '../pages/pageManager.page';
 
 test.beforeEach(async({page})=>{
   await page.goto('/')
