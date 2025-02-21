@@ -1,7 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
 import path from 'path';
+
 require('dotenv').config();
+
 export const STORAGE_STATE = path.join(__dirname, 'playwright/.auth/user.json')
+
 export default defineConfig({
   testDir: './tests',
   timeout: 30 * 1000, 

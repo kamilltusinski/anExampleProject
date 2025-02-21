@@ -14,6 +14,10 @@ Add real data to your project using the #.env file. The project requires the .en
 
 ## Usage
 ```python
-# Execution of tests
+# Execution of e2e tests
 npx playwright test --headed
+```
+```python
+#Execution of api tests
+npm run tests:api
 ```
